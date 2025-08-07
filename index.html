@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+</head>
+<body>
+	<style type="text/css">
+		.menu{
+			background-image: url(menu.avif);
+			background-size: 100% 100%;
+			height: 1500px;
+			width: 1500px;
+		}
+
+
+
+
+
+		.logo{
+			background-image: url(cometa_remove.png);
+			background-size: 100% 100%;
+			height: 260px;
+			width: 310px;
+			position: absolute;
+			left: 685px;
+			top: 20px;
+		}
+		.logoT1{
+			border-color: black;
+			position: absolute;
+			left: 45px;
+			top: 70px;
+		}
+		.logoT2{
+			position: absolute;
+			left: 137px;
+			top: 165px;
+		}
+		.logoT3{
+			position: absolute;
+			left: 45px;
+			top: 103px;
+		}
+		.base{
+			width: 175px;
+			height: 100px;
+			background: darkslategray;
+			position: absolute;
+			top:70px ;
+			left: 29px;
+			border-radius: 9px;
+		}
+		.base0{
+			width: 135px;
+			height: 55px;
+			background: darkgray;
+			position: absolute;
+			top:170px ;
+			left: 100px;
+			border-radius: 9px;
+		}
+
+
+
+
+		.base1{
+			width: 375px;
+			height: 270px;
+			background: darkslategray;
+			position: absolute;
+			top:340px ;
+			left: 29px;
+			border-radius: 18px;
+			border: black solid 2px;  
+
+		}
+		.logoASK{
+			background-image: url(logoASK.webp);
+			background-size: 100% 100%;
+			width: 90px;
+			height: 90px;
+			position: absolute;
+			left: 130px;
+			top: 10px;
+			border-radius: 8px;
+		}
+		.nameG1{
+			position: absolute;
+			top: 95px;
+			left: 40px;
+		}
+		.ds1{
+			position: absolute;
+			top: 170px;
+			left: 30px;
+		}
+		.play1{
+			position: absolute;
+			top: 140px;
+			left: 145px;
+			border-radius: 5px;
+		}
+
+
+
+
+
+		.base2{
+			width: 375px;
+			height: 270px;
+			background: darkslategray;
+			position: absolute;
+			top:460px ;
+			left: 650px;
+			border-radius: 18px;
+			border: black solid 2px;  
+
+		}
+		.logo2{
+			background-image: url(ast.jpg);
+			background-size: 100% 100%;
+			width: 90px;
+			height: 90px;
+			position: absolute;
+			left: 130px;
+			top: 10px;
+			border-radius: 8px;
+		}
+		.nameG2{
+			position: absolute;
+			top: 95px;
+			left: 40px;
+		}
+		.ds2{
+			position: absolute;
+			top: 170px;
+			left: 30px;
+		}
+		.play2{
+			position: absolute;
+			top: 140px;
+			left: 145px;
+			border-radius: 5px;
+		}
+
+
+
+
+
+		.base3{
+			width: 375px;
+			height: 270px;
+			background: darkslategray;
+			position: absolute;
+			top:238px ;
+			left: 1100px;
+			border-radius: 18px;
+			border: black solid 2px;  
+
+		}
+		.logo3{
+			background-image: url(WW.webp);
+			background-size: 100% 100%;
+			width: 90px;
+			height: 90px;
+			position: absolute;
+			left: 130px;
+			top: 10px;
+			border-radius: 8px;
+		}
+		.nameG3{
+			position: absolute;
+			top: 95px;
+			left: 40px;
+		}
+		.ds3{
+			position: absolute;
+			top: 170px;
+			left: 30px;
+		}
+		.play3{
+			position: absolute;
+			top: 140px;
+			left: 145px;
+			border-radius: 5px;
+		}
+
+
+
+
+		.tru1{
+			width: 500px;
+			height: 10px;
+			background: darkgray;
+			position: absolute;
+			top: 170px;
+			left: 200px;
+			border: black solid 2px;  
+		}
+		.tru2{
+			width: 10px;
+			height: 170px;
+			background: darkgray;
+			position: absolute;
+			top: 170px;
+			left: 200px;
+			border: black solid 2px;  
+		}
+		.tru3{
+			width: 10px;
+			height: 200px;
+			background: darkgray;
+			position: absolute;
+			top: 270px;
+			left: 830px;
+			border: black solid 2px;  
+		}
+
+		.tru4{
+			width: 300px;
+			height: 10px;
+			background: darkgray;
+			position: absolute;
+			top: 170px;
+			left: 970px;
+			border: black solid 2px;  
+		}
+		.tru5{
+			width: 10px;
+			height: 70px;
+			background: darkgray;
+			position: absolute;
+			top: 170px;
+			left: 1268px;
+			border: black solid 2px;  
+		}
+
+		.start1{
+			width: 200px;
+			height: 140px;
+			position: absolute;
+			left: 500px;
+			top: 250px;
+			display: none;
+		}
+		.zem1{
+			width: 8000px;
+			height: 1px;
+			background: black;
+			position: absolute;
+			left: 1px;
+			top: 680px;
+			display: none;
+		}
+		.player1{
+			width: 100px;
+			height: 100px;
+			background-image: url(player1.webp);
+			background-size: 100% 100%;
+			position: absolute;
+			left: 1px;
+			top: 580px;
+			transition: 0.5s;
+			display: none;
+		}
+		.prod1{
+			width: 100px;
+			height: 130px;
+			background-image: url(prod1.webp);
+			background-size: 100% 100%;
+			position: absolute;
+			left: 2000px;
+			top: 550px;
+			display: none;
+		}
+		.ask1{
+			width: 500px;
+			height: 180px;
+			background: white;
+			border: black solid 2px;
+			position: absolute;
+			left: 1500px;
+			top: 370px;
+			display: none;
+		}
+
+		.prod2{
+			width: 100px;
+			height: 130px;
+			background-image: url(prod2.webp);
+			background-size: 100% 100%;
+			position: absolute;
+			left: 4000px;
+			top: 550px;
+			display: none;
+		}
+		.ask2{
+			width: 500px;
+			height: 230px;
+			background: white;
+			border: black solid 2px;
+			position: absolute;
+			left: 3500px;
+			top: 320px;
+			display: none;
+		}
+
+		.prod3{
+			width: 100px;
+			height: 130px;
+			background-image: url(prod3.webp);
+			background-size: 100% 100%;
+			position: absolute;
+			left: 6000px;
+			top: 550px;
+			display: none;
+		}
+		.ask3{
+			width: 500px;
+			height: 230px;
+			background: white;
+			border: black solid 2px;
+			position: absolute;
+			left: 5800px;
+			top: 320px;
+			display: none;
+		}
+		.end1{
+			width: 300px;
+			height: 370px;
+			background-image: url(end1.png);
+			background-size: 100% 100%;
+			position: absolute;
+			left: 7700px;
+			top: 320px;
+			display: none;
+		}
+		.eend{
+			width: 500px ;
+			height: 450px;
+			background: lightgray;
+			border: black 1px solid;
+			display: none;
+			transition: 1s;
+			position: absolute;
+			left: 7000px;
+			top: 1px;
+		}
+		.eh1{
+			position: absolute;
+			left: 220px;
+			top: 60px;
+		}
+		.ebb{
+			width: 80px;
+			height: 60px;
+			position: absolute;
+			left: 220px;
+			top: 130px;
+		}
+		.prav1{
+			width: 300px;
+			height: 320px;
+			border: black solid 1px;
+			display: none;
+		}
+
+
+		.m1{
+			width: 120px;
+			height: 85px;
+			background-image: url(images-removebg-preview.png);
+			background-size: 100% 100%;
+			position: absolute;
+			left: 123px;
+			top: 321px;
+			transition: 1s;
+			display: none;
+		}
+		.m2{
+			width: 110px;
+			height: 105px;
+			background-image: url(images-removebg-preview.png);
+			background-size: 100% 100%;
+			position: absolute;
+			left: 704px;
+			top: 110px;
+			transition: 1s;
+			display: none;
+		}
+		.m3{
+			width: 120px;
+			height: 85px;
+			background-image: url(isolated-dark-grey-asteroid-3d-render-space-rock_191095-85682-removebg-preview.png);
+			background-size: 100% 100%;
+			position: absolute;
+			left: 503px;
+			transition: 1s;
+			top: 621px;
+			display: none;
+		}
+		.m4{
+			width: 110px;
+			height: 105px;
+			background-image: url(isolated-dark-grey-asteroid-3d-render-space-rock_191095-85682-removebg-preview.png);
+			background-size: 100% 100%;
+			position: absolute;
+			left: 74px;
+			top: 110px;
+			transition: 1s;
+			display: none;
+		}
+		.m5{
+			width: 80px;
+			height: 125px;
+			background-image: url(images-removebg-preview.png);
+			background-size: 100% 100%;
+			position: absolute;
+			left: 1304px;
+			top: 310px;
+			transition: 1s;
+			display: none;
+		}
+		.m6{
+			width: 150px;
+			height: 75px;
+			background-image: url(images-removebg-preview.png);
+			background-size: 100% 100%;
+			position: absolute;
+			left: 904px;
+			top: 610px;
+			transition: 1s;
+			display: none;
+		}
+		.fon2{
+			width: 1600px;
+			height: 1100px;
+			background-image: url(fon2.jpg);
+			background-size: 100% 100%;
+			display: none;
+		}
+		.start2{
+			width: 150px;
+			height: 120px;
+			position: absolute;
+			left: 650px;
+			top: 400px;
+			display: none;
+		}
+		.timer{
+			position: absolute;
+			left: 200px;
+			top: 10px;
+		}
+		.och{
+			position: absolute;
+			left: 300px;
+			top: 70px;
+		}
+		.ochV{
+			position: absolute;
+			left: 330px;
+			top: 70px;
+		}
+		.t{
+			position: absolute;
+			left: 10px;
+			top: 10px;
+		}
+		.t2{
+			position: absolute;
+			left: 258px;
+			top: 10px;
+		}
+		.o{
+			position: absolute;
+			left: 10px;
+			top: 70px;
+		}
+		.ww{
+			position: absolute;
+			left: 100px;
+			top: 40px;
+			width: 150px;
+			height: 230px;
+			background-image: url(a1.webp);
+			background-size: 100% 100%;
+			border-radius: 10px;
+			transition: 1s;
+			display: none;
+		}
+		.you{
+			position: absolute;
+			left: 100px;
+			top: 300px;
+			width: 150px;
+			height: 230px;
+			background-image: url(7.avif);                                                                                                                                                                          
+			background-size: 100% 100%;
+			border-radius: 10px;
+			transition: 1s;
+			display: none;
+		}
+		.rules3{
+			position: absolute;
+			left: 300px;
+			top: 250px;
+			width: 250px;
+			height: 390px;
+			border: black 1px solid;
+			display: none;
+		}
+		.start3{
+			position: absolute;
+			left: 120px;
+			top: 340px;
+			width: 100px;
+			height: 40px;
+
+		}
+		.speed{
+			position: absolute;
+			left: 100px;
+			top: 630px;
+			width: 5000px;
+			height: 120px;
+			display: none;
+		}
+	</style>
+	<button class="start1 ">
+	<p class="fw-bold fs-1">НАЧАТЬ</p>
+	</button>
+	<div class="zem1"></div>
+	<div class="prav1"></div>
+	<div class="player1"></div>
+	<div class="prod1"></div>
+
+	<div class="fon2">
+		<p class="t text-light fs-1">Осталось </p>
+		<p class="t2 text-light fs-1 ">секунд </p>
+		<p class="timer text-light fs-1">10</p>
+		<p class="o text-light fs-1">набрано очков</p>
+		<div class="och text-light fs-1">0</div>
+		<div class="ochV text-light fs-1">  из 6</div>
+		<button class="start2">НАЧАТЬ</button>
+		<div class="m1"></div>
+		<div class="m2"></div>
+		<div class="m3"></div>
+		<div class="m4"></div>
+		<div class="m5"></div>
+		<div class="m6"></div>
+
+
+	</div>
+
+
+
+	<div class="ask1">
+		<p class="fw-bold fs-3">у какой нами изученой планеты на данный момент самые большие кольца ?</p>
+		<button class="v11">J1407b</button>
+		<button class="v12">J1337f</button>
+		<button class="v13">J1508b</button>
+		<button class="v14">J1417s</button>
+	</div>
+	<div class="prod2"></div>
+	<div class="ask2">
+		<p class="fw-bold fs-3">Почему KEPLER-413b пропал из нашей видимости на 800 дней  ?</p>
+		<button class="v21">Потому что он был уничтожен своей материнской светилой </button>
+		<button class="v22">Потому что у него необычная орбита </button>
+		<button class="v23">Потому что он уходит из своей орбиты и возращается</button>
+		<button class="v24">потому что он столкнулся с другой планетой </button>
+	</div>
+	<div class="prod3"></div>
+	<div class="ask3">
+		<p class="fw-bold fs-3">у какой планеты по офицальном источникам состоит треть из алмазов ?</p>
+		<button class="v31">46 bonu v</button>
+		<button class="v32">diamondP</button>
+		<button class="v33">все ответы не правильный</button>
+		<button class="v34">55 Cancri e</button>
+	</div>
+	<div class="end1"></div>
+	<div class="eend">
+		<h1 class="eh1">конец....</h1>
+		<button class="ebb">меню</button>
+	</div>
+
+	<div class="ww"></div>
+	<div class="you"></div>
+	<div class="rules3">
+		<h3> Вы должны дойти до финиша первее Уолли Уэста .
+		Финиш находится в 5000 пикселей от вас.
+		Что бы идти надо нажимать на длиннууууууую кнопку снизу.
+		Удачи
+		</h3>
+		<button class="start3">НАЧАТЬ</button>
+	</div>
+	<button class="speed"><h1>speed</h1></button>
+	<div class="menu">
+		<div class="logo">
+			<div class="base"></div>
+			<div class="base0"></div>
+				<p class="fw-bold fs-1 text-warning logoT1">КОСМО </p>
+				<p class="fw-bold fs-1 text-warning logoT3">БАЗА</p>
+				<p class="fw-bold fs-1 text-warning logoT2">Игр</p>
+			
+		</div>
+		<div class="tru1"></div>
+		<div class="ask1"></div>
+		<div class="tru2"></div>
+		<div class="tru3"></div>
+		<div class="tru4"></div>
+		<div class="tru5"></div>
+		<div class="base1">
+			<div class="logoASK"></div>
+			<button class="play1">играть</button>
+			<p class="nameG1 text-light fs-3 fw-semibold">приключение и загадки </p>
+			<p class="text-light fs-5 fw-medium ds1"> Цель игры разгадать все загадки и дойти до финиша</p>
+		</div>
+		<div class="base2">
+			<div class="logo2"></div>
+			<button class="play2">играть</button>
+			<p class="nameG2 text-light fs-3 fw-semibold">обстрел по астеройдам </p>
+			<p class="text-light fs-5 fw-medium ds2"> Цель игры разрушить все астеройды </p>
+		</div>
+		<div class="base3">
+			<div class="logo3"></div>
+			<button class="play3">играть</button>
+			<p class="nameG3 text-light fs-3 fw-semibold"> быстрее быстрейшего </p>
+			<p class="text-light fs-5 fw-medium ds3"> Цель игры стать быстрее Уолли Уест </p>
+		</div>                                       
+	</div>
+
+
+
+	<script type="text/javascript">
+		let menu = document.querySelector(".menu")
+		let btn1 = document.querySelector(".play1")
+		let start1 = document.querySelector(".start1")
+		let zem1 = document.querySelector(".zem1")
+		let player1 = document.querySelector(".player1")
+		let num1 = 0
+		let num11 = 1860 
+		let prod1 = document.querySelector(".prod1")
+		let prod2 = document.querySelector(".prod2")
+		let prod3 = document.querySelector(".prod3")
+		let end1 = document.querySelector(".end1")
+		let ask1 = document.querySelector(".ask1")
+		let v11 = document.querySelector(".v11")
+		let v12 = document.querySelector(".v12")
+		let v13 = document.querySelector(".v13")
+		let v14 = document.querySelector(".v14")
+		let ask2 = document.querySelector(".ask2")
+		let v21 = document.querySelector(".v21")
+		let v22 = document.querySelector(".v22")
+		let v23 = document.querySelector(".v23")
+		let v24 = document.querySelector(".v24")
+		let ask3 = document.querySelector(".ask3")
+		let v31 = document.querySelector(".v31")
+		let v32 = document.querySelector(".v32")
+		let v33 = document.querySelector(".v33")
+		let v34 = document.querySelector(".v34")
+		let eend = document.querySelector(".eend")
+		let ebb = document.querySelector(".ebb")
+
+
+		let btn2 = document.querySelector(".play2")
+		let m1 = document.querySelector(".m1")
+		let m2 = document.querySelector(".m2")
+		let m3 = document.querySelector(".m3")
+		let m4 = document.querySelector(".m4")
+		let m5 = document.querySelector(".m5")
+		let m6 = document.querySelector(".m6")
+		let fon2 = document.querySelector(".fon2")
+		let start2 = document.querySelector(".start2")
+		let n1 = 321;
+		let n2 = 704;
+		let n3 = 503;
+		let n4 = 74;
+		let n5 = 1304;
+		let n6 = 404;
+		let ocki = 0;
+		let och = document.querySelector(".och")
+		let timer = document.querySelector(".timer")
+		let numTime = 10
+
+
+
+
+		let btn3 = document.querySelector(".play3")
+		let ww = document.querySelector(".ww")
+		let you = document.querySelector('.you')
+		let rules3 = document.querySelector(".rules3")
+		let speed = document.querySelector(".speed")
+		let start3 = document.querySelector(".start3")
+		let s1 = 100;
+		let s2 = 110
+		let s3 = 5000 
+		let num2 = 1
+
+		btn1.onclick = function() {
+			menu.style.display = "none"
+			start1.style.display = "block"
+			zem1.style.display = "block"
+			player1.style.display = "block"
+			prod1.style.display = "block"
+			prod2.style.display = "block"
+			prod3.style.display = "block"
+			end1.style.display = "block"
+
+		}
+
+		let stopInt;
+		start1.onclick = function() {
+			start1.style.display = "none"
+			let moveLeft = function() {
+				num1 = num1 + 110;
+				player1.style.left = num1 + "px"
+				if (num1>=1700) {
+				   ask1.style.display = "block"
+					
+					clearInterval(stopInt)
+				}
+
+
+			}
+			stopInt=setInterval(moveLeft, 1000);
+
+
+		}
+		v11.onclick = function() {
+			v11.style.background = "green"
+			v12.style.background = "red"
+			v13.style.background = "red"
+			v14.style.background = "red"
+			let moveLeft = function() {
+				num1 = num1 + 110;
+				player1.style.left = num1 + "px"
+				if (num1>=3800) {
+				   ask2.style.display = "block"
+					
+					clearInterval(stopInt)
+				}
+
+
+			}
+			stopInt=setInterval(moveLeft, 1000);
+		
+		}
+			v12.onclick = function() {
+				location.reload()
+			}
+			v13.onclick = function() {
+				location.reload()
+			}
+			v14.onclick = function() {
+				location.reload()
+			}
+		v22.onclick = function() {
+			v21.style.background = "red"
+			v22.style.background = "green"
+			v23.style.background = "red"
+			v24.style.background = "red"
+			let moveLeft = function() {
+				num1 = num1 + 110;
+				player1.style.left = num1 + "px"
+				if (num1>=5800) {
+				   ask3.style.display = "block"
+					
+					clearInterval(stopInt)
+				}
+
+
+			}
+			stopInt=setInterval(moveLeft, 1000);
+		
+		}
+		v21.onclick = function() {
+			location.reload()
+		}
+		v23.onclick = function() {
+			location.reload()
+		}
+		v24.onclick = function() {
+			location.reload()
+		}
+		v34.onclick = function() {
+			v31.style.background = "red"
+			v32.style.background = "red"
+			v33.style.background = "red"
+			v34.style.background = "green"
+			let moveLeft = function() {
+				num1 = num1 + 110;
+				player1.style.left = num1 + "px"
+				if (num1>=7500) {
+				   	eend.style.display = "block"
+					
+					clearInterval(stopInt)
+				}
+
+
+			}
+			stopInt=setInterval(moveLeft, 1000);
+		}
+			v31.onclick = function() {
+				location.reload()
+			}
+			v33.onclick = function() {
+				location.reload()
+			}
+			v32.onclick = function() {
+				location.reload()
+			}
+			ebb.onclick = function() {
+				location.reload()
+			}
+
+
+
+		btn2.onclick = function() {
+			menu.style.display = "none"
+			fon2.style.display = "block"
+			start2.style.display = "block"
+
+		}
+
+		start2.onclick = function() {
+			start2.style.display = "none"
+			m1.style.display = "block"
+			m2.style.display = "block"
+			m3.style.display = "block"
+			m4.style.display = "block"
+			m5.style.display = "block"
+			m6.style.display = "block"
+			let timing = function() {
+				numTime = numTime - 1
+					timer.innerHTML = numTime
+			}
+
+			let myint = setInterval(timing,1000)
+
+			let stoptimer = function() {
+				clearInterval(myint)
+				if (ocki==6) {
+					fon2.style.display = "none"
+					menu.style.display = "block"
+				} else{
+					alert("время вышло ")
+					alert("проигрыш")
+					m1.style.display = "none"
+					m2.style.display = "none"
+					m3.style.display = "none"
+					m4.style.display = "none"
+					m5.style.display = "none"
+					m6.style.display = "none"
+				}
+			}
+			setTimeout(stoptimer,10000)
+
+			let moveLeft = function() {
+				n1 = n1 + 67;
+				m1.style.left = n1 + "px"
+			}
+			setInterval(moveLeft,350);
+			let moveRight = function() {
+				n2 = n2 - 70;
+				m2.style.left = n2 + "px"
+			}
+			setInterval(moveRight,370)
+			let moveTop = function() {
+				n3 = n3 - 50;
+				m3.style.top = n3 + "px"
+			}
+			setInterval(moveTop,360);
+			let moveBotton = function() {
+				n4 = n4 + 50;
+				m4.style.top = n4 + "px"
+			}
+			setInterval(moveBotton,380);
+			let moveRight1 = function() {
+				n5 = n5 - 67;
+				m5.style.left = n5 + "px"
+			}
+			setInterval(moveRight1,370)
+			let moveTop1 = function() {
+				n6 = n6 - 50;
+				m6.style.top = n6 + "px"
+			}
+			setInterval(moveTop1,410);
+		}
+		m1.onclick = function() {
+			m1.style.display = "none"
+			ocki = ocki + 1
+			och.innerHTML = ocki
+			if (ocki==6) {
+				alert("win")
+			}
+		}
+		m2.onclick = function() {
+			m2.style.display = "none"
+			ocki = ocki + 1
+			och.innerHTML = ocki
+			if (ocki==6) {
+				alert("win")
+			}
+		}
+		m3.onclick = function() {
+			m3.style.display = "none"
+			ocki = ocki + 1
+			och.innerHTML = ocki
+			if (ocki==6) {
+				alert("win")
+			}
+		}
+		m4.onclick = function() {
+			m4.style.display = "none"
+			ocki = ocki + 1
+			och.innerHTML = ocki
+			if (ocki==6) {
+				alert("win")
+			}
+		}
+		m5.onclick = function() {
+			m5.style.display = "none"
+			ocki = ocki + 1
+			och.innerHTML = ocki
+			if (ocki==6) {
+				alert("win")
+			}
+		}
+		m6.onclick = function() {
+			m6.style.display = "none"
+			ocki = ocki + 1
+			och.innerHTML = ocki
+			if (ocki==6) {
+				alert("win")
+			}
+		}
+
+
+
+
+
+		btn3.onclick = function() {
+			menu.style.display = "none"
+			ww.style.display = "block"
+			you.style.display = "block"
+			rules3.style.display = "block"
+			speed.style.display = "block"
+		}
+		start3.onclick = function() {
+			rules3.style.display = "none"
+				let moveLeft3 = function() {
+					s1 = s1 + 2;
+					ww.style.left = s1 + "px"
+				}
+				setInterval(moveLeft3,2)
+				let moveLeft4 = function() {
+					s2 = s2 + 50
+					you.style.left = s2 + "px"
+				}
+				speed.onclick = function() {
+					moveLeft4()
+				}
+
+
+		}
+				let moveLeft3 = function() {
+					s1 = s1 + 2;
+					ww.style.left = s1 + "px"
+					if (s1<=5000) {
+					clearInterval(stopInt)
+					}
+					stopInt=setInterval(moveLeft3, 1000);
+
+				}
+
+
+
+		
+	</script>
+</body>
+</html>
+
+
+
+
+                                                              
